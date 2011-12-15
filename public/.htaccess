@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteBase /atuin/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?url=$1 [PT,L]
