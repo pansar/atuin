@@ -14,7 +14,7 @@
 		function loadController($class)
 		{
 			$file = "cori_celesti/controller/".$this->uri['controller'].".php";
-			if(!file_exists($file)) die("No controller available") ;
+			if(!file_exists($file)) die("Try using a working controller, smart-ass") ;
 			
 			require_once($file);
 
